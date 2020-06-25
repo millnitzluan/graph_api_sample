@@ -1,0 +1,37 @@
+{
+  "name": "graph_api_sample",
+  "version": "1.0.0",
+  "description": "just studying Node + Typescript aka Java 2.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millnitzluan/graph_api_sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/millnitzluan/graph_api_sample/issues"
+  },
+  "homepage": "https://github.com/millnitzluan/graph_api_sample#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.1.0",
+    "sqlite": "^4.0.11",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "@types/sequelize": "^4.28.9",
+    "@types/validator": "^13.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
