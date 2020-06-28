@@ -1,6 +1,8 @@
 import { Sequelize, Model, DataTypes, BuildOptions } from 'sequelize';
 import { database } from '../config/database';
 
+import { Link } from './link.model';
+
 export interface NodeInterface {
   name: string;
 }
@@ -28,5 +30,17 @@ Node.init(
     sequelize: database
   },
 );
+
+Node.hasMany(Link, {
+  sourceKey: 'id',
+  foreignKey: 'fromId',
+  as: 'previousLinks'
+});
+
+Node.hasMany(Link, {
+  sourceKey: 'id',
+  foreignKey: 'toId',
+  as: 'nextLinks'
+});
 
 Node.sync({ force: true }).then(() => console.log('node table created!'));
