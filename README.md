@@ -31,17 +31,43 @@ npm install
 npm run dev
 ```
 
+```sh
+curl -X POST --data "name=first"  http://localhost:3000/nodes
+
+curl -X POST --data "name=second"  http://localhost:3000/nodes
+
+curl -X POST --data "name=third"  http://localhost:3000/nodes
+
+curl -X POST --data "fromId=1" --data "toId=2"  http://localhost:3000/links
+
+curl -X POST --data "fromId=2" --data "toId=3"  http://localhost:3000/links
+
+curl http://localhost:3000
+graph TD;
+1[first];
+2[second];
+3[third];
+1 --> 2;
+2 --> 3;
+```
+
 ## Run tests
 
 ```sh
 npm run test
 ```
 
+## TO DO
+
+- [x] Implement sample graph api.
+- [ ] Tests.
+- [ ] Interface to create graph.
+- [ ] Implements Repository, Services.
+
 ## Author
 
 👤 **Luan Millnitz**
 
-* Website: github.com/millnitzluan
 * Twitter: [@millnitzluan](https://twitter.com/millnitzluan)
 * Github: [@millnitzluan](https://github.com/millnitzluan)
 
