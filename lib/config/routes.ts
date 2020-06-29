@@ -1,13 +1,15 @@
 import { Request, Response } from 'express';
 import { NodesController } from '../controllers/nodes.controller';
 import { LinksController } from '../controllers/links.controller';
+import { GraphController } from '../controllers/graph.controller';
 
 export class Routes {
   public nodesController: NodesController = new NodesController();
   public linksController: LinksController = new LinksController();
+  public graphController: GraphController = new GraphController();
 
   public routes(app): void {
-    app.route('/').get(this.nodesController.index);
+    app.route('/').get(this.graphController.mermaid);
 
     app
       .route('/nodes')
