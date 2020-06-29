@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { Link } from '../models/link.model';
 import { Node } from '../models/node.model';
 
-
+// Sorry for that,  planned to refactor
 export class GraphController {
   public mermaid(_req: Request, res: Response) {
     const getMermaid = new Promise<string>((resolve, reject) => {
