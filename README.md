@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to graph_api_sample 👋</h1>
+<h1 align="center">Welcome to Graph API 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/millnitzluan/graph_api_sample#readme" target="_blank">
